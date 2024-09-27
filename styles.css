@@ -169,6 +169,14 @@ h2 {
   break-after: always;
 }
 
+#how-it-works li:first-child h4 {
+  margin-top: 0;
+}
+
+#how-it-works li h4::first-letter {
+  margin-left: 10px;
+}
+
 #how-it-works li p {
   color: #9CFCE6;
 }
@@ -193,6 +201,15 @@ h2 {
 #more {
   background-color: #28284E;
   z-index: -4;
+  text-align: center;
+}
+
+h2 b {
+  font-family: "Suez One", serif;
+  font-weight: normal;
+  color: #fff;
+  text-shadow: 0 0 1px #F2E28C, 0 0 1px #F2E28C, 0 0 1px #F2E28C, 0 0 1px #F2E28C, 0 0 1px #F2E28C, 0 0 1px #F2E28C, 0 0 1px #F2E28C, 0 0 1px #F2E28C, 0 0 1px #F2E28C, 0 0 1px #F2E28C, 0 0 1px #F2E28C, 0 0 1px #F2E28C, 0 0 1px #F2E28C, 0 0 1px #F2E28C, 0 0 1px #F2E28C;
+  margin-right: 10px;
 }
 
 video {
@@ -204,10 +221,36 @@ iframe {
   margin: 0 auto;
 }
 
-#pricing {
-  height: 100px;
+#languages {
   background-color: #2D2B55;
   z-index: -5;
+  text-align: center;
+}
+
+#languages ul {
+  padding: 10px 30px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+#languages li {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: inset 0 0 20px #F2E28C;
+}
+
+#languages h4 {
+  font-size: 40px;
+}
+
+#languages .icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 80px;
 }
 
 #contact {
@@ -244,6 +287,14 @@ footer {
   #how-it-works .container>div h4 {
     break-before: unset !important;
     break-after: avoid;
+  }
+
+  #languages ul {
+    flex-direction: column;
+  }
+
+  #languages h4 {
+    margin: 5px;
   }
 }
 
